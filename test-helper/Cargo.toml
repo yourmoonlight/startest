@@ -1,0 +1,65 @@
+[package]
+name = "test-helper"
+version = "1.10.0-rc.1"
+authors = ["Starcoin Core Dev <dev@starcoin.org>"]
+license = "Apache-2.0"
+publish = false
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.41"
+thiserror = "1.0"
+backtrace = "0.3"
+tokio = { version = "0.2", features = ["full"] }
+futures = "0.3.12"
+futures-timer = "3.0"
+hex= "0.4.3"
+serde = { version = "1.0.130" }
+serde_json = "1.0"
+starcoin-metrics = { path = "../commons/metrics" }
+starcoin-config = { path = "../config" }
+starcoin-consensus = { path = "../consensus" }
+starcoin-executor = { path = "../executor" }
+starcoin-network = { path = "../network" }
+starcoin-txpool = { path = "../txpool" }
+starcoin-chain = { path = "../chain" }
+starcoin-chain-notify = { path = "../chain/chain-notify" }
+starcoin-rpc-server = { path = "../rpc/server" }
+starcoin-storage = { path = "../storage" }
+starcoin-miner = { path = "../miner" }
+starcoin-crypto = { package = "starcoin-crypto", path = "../commons/crypto" }
+starcoin-logger = { path = "../commons/logger" }
+starcoin-types = { path = "../types" }
+starcoin-vm-types = { path = "../vm/types" }
+starcoin-sync = { path = "../sync" }
+starcoin-genesis = { path = "../genesis" }
+starcoin-account-api = { path = "../account/api" }
+starcoin-account-service = { path = "../account/service" }
+starcoin-state-api = { path = "../state/api" }
+starcoin-state-service = { path = "../state/service" }
+starcoin-txpool-api = { path = "../txpool/api" }
+starcoin-sync-api = { package = "starcoin-sync-api", path = "../sync/api" }
+starcoin-block-relayer = { path = "../block-relayer" }
+starcoin-network-rpc = { path = "../network-rpc" }
+starcoin-network-rpc-api = { path = "../network-rpc/api" }
+network-rpc-core = { path = "../network-rpc/core" }
+network-p2p-types = { path = "../network-p2p/types"}
+starcoin-dev = { path = "../vm/dev" }
+starcoin-node = { path = "../node" }
+starcoin-node-api = { path = "../node/api" }
+starcoin-service-registry = { path = "../commons/service-registry" }
+stdlib = {path ="../vm/stdlib"}
+starcoin-statedb = {path = "../state/statedb"}
+starcoin-move-compiler = { path = "../vm/compiler"}
+rand = "0.8.4"
+network-api = { path = "../network/api" }
+async-trait = "0.1.51"
+accumulator = { path = "../commons/accumulator", package = "starcoin-accumulator" }
+state-tree = { path = "../state/state-tree", package = "starcoin-state-tree" }
+bcs-ext = { package = "bcs-ext", path = "../commons/bcs_ext" }
+starcoin-transaction-builder = { path = "../vm/transaction-builder"}
+
+
+[dev-dependencies]
+stest = { path = "../commons/stest" }
+

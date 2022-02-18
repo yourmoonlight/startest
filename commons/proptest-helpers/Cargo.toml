@@ -1,0 +1,14 @@
+[package]
+name = "starcoin-proptest-helpers"
+version = "1.10.0-rc.1"
+authors = ["Starcoin Core Dev <dev@starcoin.org>"]
+license = "Apache-2.0"
+publish = false
+edition = "2021"
+
+[dependencies]
+crossbeam = "0.7.3"
+diem-proptest-helpers = { package="diem-proptest-helpers",  git = "https://github.com/starcoinorg/diem", rev="94cad072661257a7d55713d6a6df81638a9580ae"  }
+
+proptest = "1.0.0"
+proptest-derive = "0.3.0"

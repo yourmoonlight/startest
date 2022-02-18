@@ -1,0 +1,27 @@
+[package]
+name = "starcoin-account-service"
+version = "1.10.0-rc.1"
+authors = ["Starcoin Core Dev <dev@starcoin.org>"]
+license = "Apache-2.0"
+publish = false
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.41"
+futures = "0.3.12"
+async-trait = "0.1"
+starcoin-logger = { path = "../../commons/logger" }
+starcoin-types = { path = "../../types" }
+bcs-ext = { package = "bcs-ext", path = "../../commons/bcs_ext" }
+starcoin-config = { path = "../../config" }
+starcoin-service-registry = { path = "../../commons/service-registry" }
+starcoin-account-api = { path = "../api", features = ["mock"] }
+starcoin-account = { path = "../" }
+starcoin-crypto = { path = "../../commons/crypto" }
+starcoin-chain-notify = { path = "../../chain/chain-notify" }
+
+
+[dev-dependencies]
+stest = { path = "../../commons/stest" }
+tempfile = "3"
+
