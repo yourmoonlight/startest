@@ -40,7 +40,7 @@ jobs:
       - name: build
         uses: actions-rs/cargo@v1
         with:
-          command: build  
+          command: build
           args: --all
       - name: test
         run: bash ./scripts/auto_rerun_test.sh
