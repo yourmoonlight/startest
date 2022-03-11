@@ -230,7 +230,7 @@ dependencies = [
  "starcoin-rpc-api",
  "starcoin-types",
  "starcoin-vm-types",
- "tokio 0.2.25",
+ "tokio 1.17.0",
 ]
 
 [[package]]
@@ -893,12 +893,6 @@ name = "bytes"
 version = "0.5.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "0e4cec68f03f32e44924783795810fa50a7035d8c8ebe78580ad7e6c703fba38"
-
-[[package]]
-name = "bytes"
-version = "0.6.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e0dcbc35f504eb6fc275a6d20e4ebcda18cf50d40ba6fabff8c711fa16cb3b16"
 
 [[package]]
 name = "bytes"
@@ -2760,7 +2754,7 @@ dependencies = [
  "starcoin-rpc-api",
  "starcoin-types",
  "starcoin-vm-types",
- "tokio 0.2.25",
+ "tokio 1.17.0",
 ]
 
 [[package]]
@@ -4885,19 +4879,6 @@ dependencies = [
 
 [[package]]
 name = "mio"
-version = "0.7.14"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "8067b404fe97c70829f082dec8bcf4f71225d7eaea1d8645349cb76fa06205cc"
-dependencies = [
- "libc",
- "log 0.4.14",
- "miow 0.3.7",
- "ntapi",
- "winapi 0.3.9",
-]
-
-[[package]]
-name = "mio"
 version = "0.8.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "ba272f85fa0b41fc91872be579b3bbe0f56b792aa361a380eb669469f68dafb2"
@@ -5447,7 +5428,7 @@ dependencies = [
  "stdlib",
  "structopt 0.3.26",
  "tempfile",
- "tokio 0.2.25",
+ "tokio 1.17.0",
  "walkdir",
  "workspace-hack",
 ]
@@ -9095,7 +9076,7 @@ dependencies = [
  "starcoin-txpool-api",
  "starcoin-types",
  "stest",
- "tokio 0.2.25",
+ "tokio 1.17.0",
 ]
 
 [[package]]
@@ -9134,7 +9115,7 @@ dependencies = [
  "stest",
  "test-helper",
  "thiserror",
- "tokio 0.2.25",
+ "tokio 1.17.0",
 ]
 
 [[package]]
@@ -9278,7 +9259,7 @@ dependencies = [
  "stest",
  "structopt 0.3.26",
  "test-helper",
- "tokio 0.2.25",
+ "tokio 1.17.0",
  "vm-status-translator",
 ]
 
@@ -9502,7 +9483,7 @@ dependencies = [
  "starcoin-types",
  "structopt 0.3.26",
  "tiny_http",
- "tokio 0.2.25",
+ "tokio 1.17.0",
  "tokio-executor 0.2.0-alpha.6",
 ]
 
@@ -9588,7 +9569,7 @@ dependencies = [
  "starcoin-logger",
  "starcoin-rpc-api",
  "starcoin-types",
- "tokio 0.2.25",
+ "tokio 1.17.0",
 ]
 
 [[package]]
@@ -9666,7 +9647,7 @@ dependencies = [
  "stest",
  "test-helper",
  "thiserror",
- "tokio 0.2.25",
+ "tokio 1.17.0",
 ]
 
 [[package]]
@@ -9707,7 +9688,7 @@ dependencies = [
  "stest",
  "structopt 0.3.26",
  "thiserror",
- "tokio 0.3.7",
+ "tokio 1.17.0",
 ]
 
 [[package]]
@@ -9846,7 +9827,7 @@ dependencies = [
  "stest",
  "tempfile",
  "test-helper",
- "tokio 0.2.25",
+ "tokio 1.17.0",
  "yamux",
  "zeroize",
 ]
@@ -9894,7 +9875,7 @@ dependencies = [
  "starcoin-vm-types",
  "stest",
  "test-helper",
- "tokio 0.2.25",
+ "tokio 1.17.0",
 ]
 
 [[package]]
@@ -9967,7 +9948,7 @@ dependencies = [
  "stest",
  "thiserror",
  "timeout-join-handler",
- "tokio 0.2.25",
+ "tokio 1.17.0",
 ]
 
 [[package]]
@@ -10143,7 +10124,7 @@ dependencies = [
  "stest",
  "test-helper",
  "thiserror",
- "tokio 0.2.25",
+ "tokio 1.17.0",
 ]
 
 [[package]]
@@ -10233,7 +10214,7 @@ dependencies = [
  "stest",
  "test-helper",
  "thiserror",
- "tokio 0.2.25",
+ "tokio 1.17.0",
  "vm-status-translator",
 ]
 
@@ -10444,7 +10425,7 @@ dependencies = [
  "stream-task",
  "test-helper",
  "thiserror",
- "tokio 0.2.25",
+ "tokio 1.17.0",
 ]
 
 [[package]]
@@ -10522,7 +10503,7 @@ dependencies = [
  "starcoin-vm-types",
  "stdlib",
  "structopt 0.3.26",
- "tokio 0.2.25",
+ "tokio 1.17.0",
 ]
 
 [[package]]
@@ -10542,7 +10523,7 @@ dependencies = [
  "starcoin-state-api",
  "starcoin-types",
  "structopt 0.3.26",
- "tokio 0.2.25",
+ "tokio 1.17.0",
 ]
 
 [[package]]
@@ -10781,7 +10762,7 @@ dependencies = [
  "starcoin-logger",
  "stest-macro",
  "timeout-join-handler",
- "tokio 0.2.25",
+ "tokio 1.17.0",
 ]
 
 [[package]]
@@ -11244,7 +11225,7 @@ dependencies = [
  "stdlib",
  "stest",
  "thiserror",
- "tokio 0.2.25",
+ "tokio 1.17.0",
 ]
 
 [[package]]
@@ -11483,28 +11464,6 @@ dependencies = [
 
 [[package]]
 name = "tokio"
-version = "0.3.7"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "46409491c9375a693ce7032101970a54f8a2010efb77e13f70788f0d84489e39"
-dependencies = [
- "autocfg 1.1.0",
- "bytes 0.6.0",
- "futures-core",
- "libc",
- "memchr",
- "mio 0.7.14",
- "num_cpus",
- "once_cell",
- "parking_lot 0.11.2",
- "pin-project-lite 0.2.8",
- "signal-hook-registry",
- "slab",
- "tokio-macros 0.3.2",
- "winapi 0.3.9",
-]
-
-[[package]]
-name = "tokio"
 version = "1.17.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "2af73ac49756f3f7c01172e34a23e5d0216f6c32333757c2c61feb2bbff5a5ee"
@@ -11571,17 +11530,6 @@ name = "tokio-macros"
 version = "0.2.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "e44da00bfc73a25f814cd8d7e57a68a5c31b74b3152a0a1d1f590c97ed06265a"
-dependencies = [
- "proc-macro2 1.0.36",
- "quote 1.0.15",
- "syn 1.0.86",
-]
-
-[[package]]
-name = "tokio-macros"
-version = "0.3.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "46dfffa59fc3c8aad216ed61bdc2c263d2b9d87a9c8ac9de0c11a813e51b6db7"
 dependencies = [
  "proc-macro2 1.0.36",
  "quote 1.0.15",

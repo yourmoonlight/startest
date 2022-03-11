@@ -21,7 +21,7 @@ jsonrpc-core-client = { version = "17.1.0", features = ["http", "ipc", "ws", "ar
 jsonrpc-client-transports = { version = "17.0.0", features = ["http", "ipc", "ws", "arbitrary_precision"] }
 
 futures = "0.3"
-tokio = {version = "0.2", features = ["full"]}
+tokio = {version = "1.17", features = ["full"]}
 tempfile = "~3"
 
 move-cli = { git = "https://github.com/starcoinorg/move", rev = "314436e8ab94f4cff2699d8cd0f62b96c1d2a6df" }
