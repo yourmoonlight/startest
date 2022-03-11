@@ -1,0 +1,24 @@
+[package]
+name = "starcoin-replay"
+version = "1.10.0-rc.2"
+authors = ["Starcoin Core Dev <dev@starcoin.org>"]
+license = "Apache-2.0"
+publish = false
+edition = "2021"
+
+[[bin]]
+name = "starcoin-replay"
+path = "src/main.rs"
+
+[dependencies]
+structopt = "0.3.25"
+starcoin-config = { path = "../../config"}
+starcoin-chain = { path = "../../chain"}
+starcoin-genesis = { path = "../../genesis"}
+starcoin-storage = { path = "../../storage"}
+starcoin-vm-types = { path = "../../vm/types"}
+starcoin-logger = { path = "../../commons/logger" }
+sp-utils = {path = "../../commons/utils"}
+starcoin-types = {path = "../../types"}
+anyhow="~1"
+

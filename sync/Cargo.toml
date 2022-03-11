@@ -1,0 +1,61 @@
+[package]
+name = "starcoin-sync"
+version = "1.10.0-rc.2"
+authors = ["Starcoin Core Dev <dev@starcoin.org>"]
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.41"
+thiserror = "1.0"
+rand = "0.8.5"
+pin-utils = "0.1.0"
+async-std = "1.10"
+futures = "0.3.12"
+futures-retry = "0.5.0"
+itertools = { version = "0.10.3", default-features = false }
+pin-project = "1.0.1"
+futures-timer = "3.0"
+stream-task ={ path = "../commons/stream-task"}
+starcoin-chain = { path = "../chain" }
+config = {path = "../config", package="starcoin-config"}
+network = { path = "../network", package = "starcoin-network" }
+starcoin-types = { path = "../types" }
+starcoin-crypto = { git = "https://github.com/starcoinorg/starcoin-crypto", rev = "d871dfb4216f034ee334a575926c101574d9d6dc"}
+txpool = {path = "../txpool", package="starcoin-txpool"}
+starcoin-txpool-api = {path="../txpool/api"}
+starcoin-genesis = {path = "../genesis"}
+starcoin-storage = {path = "../storage"}
+logger = {path = "../commons/logger",package="starcoin-logger"}
+consensus = {path = "../consensus", package="starcoin-consensus" }
+executor = {path = "../executor", package="starcoin-executor" }
+starcoin-state-tree = { package="starcoin-state-tree", path = "../state/state-tree"}
+parking_lot = "0.12"
+forkable-jellyfish-merkle = { path = "../commons/forkable-jellyfish-merkle"}
+network-api = {package="network-api", path="../network/api"}
+starcoin-sync-api = {package="starcoin-sync-api", path="../sync/api"}
+async-trait = "0.1"
+bcs-ext = { package = "bcs-ext", path = "../commons/bcs_ext" }
+starcoin-accumulator = { package = "starcoin-accumulator", path = "../commons/accumulator" }
+starcoin-metrics = { path = "../commons/metrics" }
+starcoin-network-rpc-api = { path = "../network-rpc/api" }
+starcoin-network-rpc = { path = "../network-rpc/", package = "starcoin-network-rpc" }
+stest = { path = "../commons/stest" }
+starcoin-vm-types = { path = "../vm/types" }
+starcoin-state-api = { path = "../state/api" }
+starcoin-service-registry = { path = "../commons/service-registry" }
+starcoin-chain-service = { path = "../chain/service" }
+starcoin-chain-api = { path = "../chain/api" }
+network-rpc-core = { path = "../network-rpc/core" }
+
+[dev-dependencies]
+tokio = { version = "0.2", features = ["full"] }
+miner = {path = "../miner", package="starcoin-miner" }
+hex = "0.4.3"
+starcoin-account-api = { path = "../account/api"}
+starcoin-block-relayer = { path = "../block-relayer"}
+starcoin-statedb = {path = "../state/statedb"}
+starcoin-state-service = { path = "../state/service" }
+starcoin-node = { path = "../node" }
+test-helper = { path = "../test-helper" }
+starcoin-txpool-mock-service = { path = "../txpool/mock-service" }
+starcoin-chain-mock = { path = "../chain/mock" }

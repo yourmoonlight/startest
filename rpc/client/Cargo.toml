@@ -1,0 +1,49 @@
+[package]
+name = "starcoin-rpc-client"
+version = "1.10.0-rc.2"
+authors = ["Starcoin Core Dev <dev@starcoin.org>"]
+license = "Apache-2.0"
+publish = false
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.41"
+thiserror = "1.0"
+serde = { version = "1.0.130", features = ["derive"] }
+serde_json = { version="1.0", features = ["arbitrary_precision"]}
+hex = "~0.4"
+actix = "0.10.0"
+actix-rt = "1.1"
+tokio = "0.2"
+log = "0.4.14"
+parking_lot = "0.12.0"
+jsonrpc-core = { version = "17.0.0", features = ["arbitrary_precision"] }
+jsonrpc-derive = "17.0.0"
+jsonrpc-server-utils = "17.1.0"
+jsonrpc-pubsub = "17.0.0"
+jsonrpc-core-client = { version = "17.1.0", features = ["http", "ipc", "ws", "arbitrary_precision"]}
+jsonrpc-client-transports = { version = "17.0.0", features = ["http", "ipc", "ws", "arbitrary_precision"] }
+futures = "0.3.12"
+parity-tokio-ipc = { version = "0.9"}
+bcs-ext = { package="bcs-ext", path = "../../commons/bcs_ext" }
+starcoin-types = { path = "../../types"}
+starcoin-vm-types = { path = "../../vm/types"}
+starcoin-crypto = { git = "https://github.com/starcoinorg/starcoin-crypto", rev = "d871dfb4216f034ee334a575926c101574d9d6dc"}
+starcoin-rpc-api = {path = "../api"}
+starcoin-logger = { path = "../../commons/logger"}
+starcoin-account-api = { path = "../../account/api"}
+starcoin-state-api = { path = "../../state/api"}
+async-std = "1.10"
+starcoin-txpool-api = {path = "../../txpool/api"}
+starcoin-sync-api = {path = "../../sync/api"}
+starcoin-service-registry = { path = "../../commons/service-registry" }
+network-p2p-types = { path = "../../network-p2p/types"}
+network-api = {path = "../../network/api", package="network-api"}
+futures-timer = "3.0"
+starcoin-abi-types = {path = "../../abi/types"}
+
+[dev-dependencies]
+starcoin-rpc-server = { path = "../server" }
+starcoin-config = { path = "../../config"}
+stest = { path = "../../commons/stest"}
+test-helper = { path = "../../test-helper"}

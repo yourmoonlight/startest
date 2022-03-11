@@ -1,0 +1,20 @@
+[package]
+name = "stest-macro"
+version = "1.10.0-rc.2"
+authors = ["Starcoin Core Dev <dev@starcoin.org>"]
+license = "Apache-2.0"
+publish = false
+edition = "2021"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+quote = "^1"
+syn = { version = "^1", features = ["full"] }
+darling = "0.10.2"
+
+[dev-dependencies]
+actix = "0.10.0-alpha.3"
+actix-rt = { version = "1.1" }
+stest = { path = "../../stest"}
