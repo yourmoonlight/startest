@@ -27,7 +27,7 @@ serde = "~1"
 serde_json = {version="~1", features=["arbitrary_precision"]}
 anyhow="~1"
 hex="~0.4"
-indicatif = "0.15.0"
+indicatif = "0.16.2"
 logger = {path = "../../commons/logger",package="starcoin-logger"}
 [target."cfg(target_os=\"linux\")".dependencies]
 pprof = { version = "0.7", features = ["flamegraph"] }
