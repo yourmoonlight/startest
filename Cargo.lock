@@ -303,6 +303,12 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "97be891acc47ca214468e09425d02cef3af2c94d0d82081cd02061f996802f14"
 
 [[package]]
+name = "ascii"
+version = "1.0.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "bbf56136a5198c7b01a49e3afcbef6cf84597273d298f54432926024107b0109"
+
+[[package]]
 name = "asn1_der"
 version = "0.7.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -9484,7 +9490,7 @@ name = "starcoin-faucet"
 version = "1.10.0-rc.2"
 dependencies = [
  "anyhow",
- "ascii",
+ "ascii 1.0.0",
  "futures 0.3.21",
  "futures-timer",
  "hex",
@@ -11425,7 +11431,7 @@ version = "0.6.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "2e22cb179b63e5fc2d0b5be237dc107da072e2407809ac70a8ce85b93fe8f562"
 dependencies = [
- "ascii",
+ "ascii 0.8.7",
  "chrono",
  "chunked_transfer",
  "log 0.4.14",
