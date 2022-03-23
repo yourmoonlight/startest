@@ -9618,7 +9618,7 @@ version = "1.11.1-alpha"
 dependencies = [
  "anyhow",
  "futures 0.3.21",
- "hyper 0.13.10",
+ "hyper 0.14.17",
  "prometheus",
  "psutil",
  "serde_json",
