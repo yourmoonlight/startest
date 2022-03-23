@@ -1,0 +1,23 @@
+[package]
+name = "network-rpc-core"
+version = "1.11.1-alpha"
+authors = ["Starcoin Core Dev <dev@starcoin.org>"]
+license = "Apache-2.0"
+publish = false
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.41"
+futures = "0.3.12"
+serde = { version = "1.0.130", features = ["derive"] }
+log = "0.4.14"
+network-rpc-derive = { path = "../derive" }
+num_enum = "0.5.7"
+bcs-ext = { path = "../../commons/bcs_ext", package = "bcs-ext" }
+
+#todo remove this dependency.
+starcoin-types = { path = "../../types", package = "starcoin-types" }
+
+[dev-dependencies]
+stest = { path = "../../commons/stest" }
+
