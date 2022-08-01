@@ -8,7 +8,7 @@ edition = "2021"
 
 [dependencies]
 walkdir = "2.3"
-anyhow = "1.0.41"
+anyhow = "1.0.59"
 move-bytecode-verifier = { git = "https://github.com/starcoinorg/move", rev = "314436e8ab94f4cff2699d8cd0f62b96c1d2a6df"  }
 starcoin-crypto = { git = "https://github.com/starcoinorg/starcoin-crypto", rev = "d871dfb4216f034ee334a575926c101574d9d6dc"}
 starcoin-vm-types = { path = "../types"}
