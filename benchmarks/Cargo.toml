@@ -7,7 +7,7 @@ publish = false
 edition = "2021"
 
 [dependencies]
-anyhow = "1.0.41"
+anyhow = "1.0.60"
 criterion = "0.3.1"
 proptest = "1.0.0"
 futures-timer = "3.0"
