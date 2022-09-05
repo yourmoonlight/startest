@@ -10,7 +10,7 @@ edition = "2021"
 log = "0.4"
 parking_lot = "0.12"
 futures-channel = "0.3"
-anyhow = "1.0.41"
+anyhow = "1.0.64"
 thiserror = "1.0"
 dashmap = "5.2"
 hex = { version = "0.4.3", default-features = false }
